@@ -287,7 +287,8 @@ self.questions_answers[qnum][0], font=("Tw Cen MT","11","bold"),bg=background_co
             self.rb3.destroy()
             self.rb.destroy()
             self.score_label.destroy()
-self.question_label.destroy()
+            self.calculatedscore_label.destroy()
+            self.answertext_label.destroy()
             QuizStarter(root)        
   
         
