@@ -260,8 +260,12 @@ self.questions_answers[qnum][0], font=("Tw Cen MT","11","bold"),bg=background_co
       
              
       
-            #exit button
-            self.exit_button = Button(self.quiz_frame , text="EXIT ", bg="pink", command=self.exit)
+           # exit button 
+
+          self.exit_button = Button(parent, text='Exit',
+                  font=('Helvetica', '13', 'bold'), bg='red',
+                  command=self.exit)
+          self.exit.place(x=355, y=620)
             #Creating instances of score variable and question number variable to be used through the classes.
             self.score = 0  
             self.question_number = 1
@@ -274,7 +278,16 @@ self.questions_answers[qnum][0], font=("Tw Cen MT","11","bold"),bg=background_co
     def exit(self):
             self.score = 0
             self.question_number = 0
-            self.quiz_frame.destroy()
+            self.heading_label.destroy()
+            self.questioncounter_label.destroy()
+            self.qnumber_label.destroy()
+            self.question_label.destroy
+            self.rb1.destroy()
+            self.rb2.destroy()
+            self.rb3.destroy()
+            self.rb.destroy()
+            self.score_label.destroy()
+self.question_label.destroy()
             QuizStarter(root)        
   
         
